@@ -97,3 +97,17 @@
     }
   
 }
+
+//abount
+.abount{
+    background-color: var($primary-normal);
+    overflow: hidden;
+    color: $white-normal;
+}
+
+.abount-content{
+    display: flex;
+    img{
+        max-width: 570px;
+    }
+}
