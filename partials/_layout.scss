@@ -1,113 +1,100 @@
-.container{
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: 0 24px;
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 24px;
 }
 
-.bg-home{
-    position: relative;
+.bg-home {
+  position: relative;
 }
 
-.bg-home::before{
-    content: " ";
-    display: block;
-    position: absolute;
-    background-image: linear-gradient(to bottom, rgba(6,18,30, 0.1), #06121e), url("../assets/bg.svg");
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 0;
-    opacity: 0.9;
+.bg-home::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  background-image: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), #06121e),
+    url("../assets/bg.svg");
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  opacity: 0.9;
 }
 
-.hero{
-    color: $white-normal;
-    min-height: 80vh;
+.hero {
+  color: $white-normal;
+  min-height: 80vh;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 14px;
- 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 14px;
 
-    h1{
-        text-align: center;
-        line-height: 150%;
-        max-width: 940px;
-        font-size: 46px;
-    }
+  h1 {
+    text-align: center;
+    line-height: 150%;
+    max-width: 940px;
+    font-size: 46px;
+  }
 
-    p{
-        text-align: center;
-        margin: 14px 0;
-    }
-   
-}
-
-.button-contact{
-    text-decoration: none;
-    padding: 14px 28px;
-    color: $white-normal;
-    background-color: $red-normal;
-    border: 0;
-    font-size: 18px;
-    font-weight: 600;
+  p {
+    text-align: center;
     margin: 14px 0;
-    border-radius: 4px;
-
+  }
 }
 
-.button-contact:hover{
-    animation: scaleButton 0.8s alternate infinite;
+.button-contact {
+  text-decoration: none;
+  padding: 14px 28px;
+  color: $white-normal;
+  background-color: $red-normal;
+  border: 0;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 14px 0;
+  border-radius: 4px;
 }
 
-@keyframes scaleButton{
-    from{
-        transform: scale(1);
-    }
-    to{
-        transform: scale(1.07);
-    }
+.button-contact:hover {
+  animation: scaleButton 0.8s alternate infinite;
 }
 
-@media screen and (max-width: 768px){
-    .hero{
-        min-height: 60vw;
-    }
-
-    h1{
-        font-size: 34px;
-        padding: 0 14px;
-        width: 100%;
-    }
-
-    p{
-        font-size: 14px;
-    }
+@keyframes scaleButton {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.07);
+  }
 }
 
-@media screen and (max-width: 480px){
-    .hero h1{
-        font-size: 24px;
-    }
-  
+@media screen and (max-width: 768px) {
+  .hero {
+    min-height: 60vw;
+  }
+
+  h1 {
+    font-size: 34px;
+    padding: 0 14px;
+    width: 100%;
+  }
+
+  p {
+    font-size: 14px;
+  }
 }
 
-//abount
-.abount{
-    background-color: var($primary-normal);
-    overflow: hidden;
-    color: $white-normal;
+@media screen and (max-width: 480px) {
+  .hero h1 {
+    font-size: 24px;
+  }
 }
 
-.abount-content{
-    display: flex;
-    img{
-        max-width: 570px;
-    }
+.about{
+    color: white;
 }
